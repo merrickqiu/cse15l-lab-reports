@@ -7,3 +7,11 @@ Duck
 * green
 
 **This is bolded**
+*This is italicized*
+
+# This is a heading
+## This is another heading
+
+[Link]https://google.com
+
+> This is a block
