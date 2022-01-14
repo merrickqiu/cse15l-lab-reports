@@ -24,6 +24,12 @@ The terminal will then ask you for your password, which you will then enter.
 (As you type or paste in your password, it will not show up in the terminal.)
 You may need to do a password reset for your cs15L account.
 Enter "Yes" if it asks if you want to continue connecting.
-Your screen should look like this:
+Your terminal should look like this:
 ![Image](ssh.png)
+
+## Basic CMD commands
+Now that you've logged in your ieng6 account, you can now run linux command line commands from the server.
+Try the commands cd, ls, pwd, mkdir, and cp on your own.
+For example, this is what the cd command looks like:
+![Image](commands.png)
 
