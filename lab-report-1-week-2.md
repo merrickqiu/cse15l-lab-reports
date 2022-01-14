@@ -72,5 +72,15 @@ Log back into your client and type
 
 This copies your public key into the ieng6 computer. 
 If this was successful, logging in will no longer require a password.
+
 On my computer, it looks like this
+
 ![Image](key.png)
+
+## Optimizing remote running
+We can make remote running faster by using a few tricks.
+Typing commands in quotes after the ssh command will immediate run those commands on the server.
+Typing commands separated by semicolons will run all the commands.
+
+For example, I can quickly compile and run a java file on ieng6 will the following command:
+![Image](optimize.png)
