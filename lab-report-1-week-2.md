@@ -49,9 +49,28 @@ class WhereAmI {
 Notice the output when you run this file on your own computer.
 Next type the command in the directory of the java file.
 > scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+
 Then SSH into ieng6 and use javac and java to run WhereAmI.java.
 Notice that the java file prints out ther properties of the server computer.
+
 A successful scp should look like this:
 ![Image](scp.png)
+
 Running the java file on ieng6 should look like this:
 ![Image](whereamI.png)
+
+## Logging in with SSH Key
+To avoid having to type in a password, we can use a SSH Key for our computer.
+Type in
+>ssh-keygen
+
+Then ssh into ieng6 and type in
+> mkdir .ssh 
+
+Log back into your client and type
+>scp /Users/YOURUSERNAME/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+
+This copies your public key into the ieng6 computer. 
+If this was successful, logging in will no longer require a password.
+On my computer, it looks like this
+![Image](key.png)
