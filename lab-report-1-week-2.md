@@ -16,9 +16,10 @@ Your Screen should look like this:
 ![Image](vscode.png)
 
 ## Connecting with SSH
-Look for your username from https://sdacs.ucsd.edu/~icc/index.php and type the command
-> ssh cs15lwi22zz@ieng6.ucsd.edu
-
+Look for your username from [Link]https://sdacs.ucsd.edu/~icc/index.php and type the command
+```
+ssh cs15lwi22zz@ieng6.ucsd.edu
+```
 but use your own personal username instead.
 The terminal will then ask you for your password, which you will then enter.
 (As you type or paste in your password, it will not show up in the terminal.)
@@ -48,8 +49,9 @@ class WhereAmI {
 ```
 Notice the output when you run this file on your own computer.
 Next type the command in the directory of the java file.
-> scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
-
+```
+scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+```
 Then SSH into ieng6 and use javac and java to run WhereAmI.java.
 Notice that the java file prints out ther properties of the server computer.
 
@@ -62,14 +64,17 @@ Running the java file on ieng6 should look like this:
 ## Logging in with SSH Key
 To avoid having to type in a password, we can use a SSH Key for our computer.
 Type in
->ssh-keygen
-
+```
+ssh-keygen
+```
 Then ssh into ieng6 and type in
-> mkdir .ssh 
-
+```
+mkdir .ssh 
+```
 Log back into your client and type
->scp /Users/YOURUSERNAME/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
-
+```
+scp /Users/YOURUSERNAME/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
 This copies your public key into the ieng6 computer. 
 If this was successful, logging in will no longer require a password.
 
