@@ -27,7 +27,7 @@ The bug was that the code did not check to see if there were no more links,
 and the code would get stuck in an infinite loop if currentIndex was still within bounds.
 The text in the failure inducing input led the program to get stuck in an infinite loop because of the bug, 
 and the infinite loop caused the symptom of the memory running out.
-The code fix checked if any of the indexes were -1, which meant that there were no more links and the loop could safely exit.
+The code fix checked if any of the bracket or parenthesis indexes were -1, which meant that there were no more links and the loop could safely exit.
 
 ## Bug Number 3
 Here is the screenshot of the bug fix commit:
@@ -37,7 +37,7 @@ The output of the file from the command line was:
 ![Output 3](lab4-output3.png)
 
 The file is a single empty link.
-The symptom was an out-of-bounds error
+The symptom was an out-of-bounds error.
 The bug was that the code checked if there was an exclamation point before the brackets, but sometimes the link was at the very beginning of the file.
 The link at the beginning led the program to try to index -1 because of the bug, 
 and the symptom was java displaying an out of bounds error.
