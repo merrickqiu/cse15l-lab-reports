@@ -6,7 +6,7 @@ Here is the screenshot of the bug fix commit:
 ![Commit 1](lab4-bug1.png)
 The code change fixes the bug induced by [this file](https://github.com/bcli12/markdown-parse/blob/main/image-file.md).
 The output of the file from the command line was this before the bug fix:
-![Output 1](lab4-output2.png)
+![Output 1](lab4-output1.png)
 
 The file contains a single image, and the symptom was that the markdown file would list the image name as a link even though it isn't a link.
 The bug was that the code only checked for brackets to indicate the start of a link while not checking if the brackets were from an image.
