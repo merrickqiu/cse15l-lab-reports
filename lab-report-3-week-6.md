@@ -1,6 +1,7 @@
 # Copy whole directories with -r
 
 Copying a whole directory into ieng6:
+
 ![Copy whole directory image](scp_whole_directory.png)
 
 The ```-r``` option tells the command to recursively copy all the folders, i.e. copy all the items inside the inner folders. 
@@ -17,4 +18,5 @@ Combining both into one command:
 ![Combining everything into one command](one_command.png)
 I SCPed the directory, put a semicolon, then SSHed into my account, and then put quotes around the commands to run the tests.
 Inside the quotes I CDed into the markdown-parse directory, compiled markdownParseTest, then ran markdownParseTest.
+Having one long command is a lot faster than typing in the commands individually.
 
