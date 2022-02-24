@@ -24,6 +24,7 @@ This would make sure that brackets inside backticks do not count.
 My code does not account for nested nested parenthesis, nested links, or escaped brackets.
 Each of these individually could be fixed in less than 10 lines, 
 but accounting for all of them would likely be a fix of greater than 10 lines.
+This is because escaped characters would have to be dealt with separately from nested characters.
 
 # Snippet 3
 I have regex in my code to check that the link is in the form of characters followed by a period followed by more characters.
