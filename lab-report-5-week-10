@@ -1,0 +1,5 @@
+# How did I find the test cases?
+I simply used ```diff``` on both ```results.txt``` files to check which tests had different results. 
+I then compared the markdown files to double check that the first two differences were different bugs, which they were.
+
+![Using Diff](diff.png)
